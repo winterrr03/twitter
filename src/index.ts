@@ -1,4 +1,6 @@
 import express, { NextFunction, Request, Response } from 'express'
+import { config } from 'dotenv'
+config()
 import databaseService from './services/database.services'
 import usersRouter from './routes/users.routes'
 import { defaultErrorHandler } from './middlewares/error.middlewares'
