@@ -14,6 +14,9 @@ const port = process.env.PORT || 4000
 
 databaseService.connect().then(() => {
   databaseService.indexUsers()
+  databaseService.indexRefreshTokens()
+  databaseService.indexVideoStatus()
+  databaseService.indexFollowers()
 })
 
 initFolder()
