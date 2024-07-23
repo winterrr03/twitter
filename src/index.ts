@@ -8,6 +8,7 @@ import mediasRouter from './routes/medias.routes'
 import { initFolder } from './utils/files'
 import staticRouter from './routes/static.routes'
 import cors from 'cors'
+import tweetsRouter from './routes/tweets.routes'
 
 const app = express()
 const port = process.env.PORT || 4000
@@ -25,6 +26,7 @@ app.use(cors())
 app.use(express.json())
 app.use('/users', usersRouter)
 app.use('/medias', mediasRouter)
+app.use('/tweets', tweetsRouter)
 
 app.use('/static', staticRouter)
 
