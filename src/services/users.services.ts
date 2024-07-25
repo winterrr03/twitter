@@ -33,7 +33,7 @@ class UsersService {
       return signToken({
         payload: {
           user_id,
-          token_type: TokenType.AccessToken,
+          token_type: TokenType.RefreshToken,
           verify,
           exp
         },
@@ -43,7 +43,7 @@ class UsersService {
     return signToken({
       payload: {
         user_id,
-        token_type: TokenType.AccessToken,
+        token_type: TokenType.RefreshToken,
         verify
       },
       privateKey: process.env.JWT_SECRET_REFRESH_TOKEN as string,
