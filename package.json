@@ -39,6 +39,7 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -54,5 +55,8 @@
     "sharp": "^0.33.4",
     "slash": "^5.1.0",
     "zx": "^8.1.4"
+  },
+  "engines": {
+    "node": ">=19.0.0"
   }
 }
